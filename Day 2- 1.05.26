@@ -171,16 +171,16 @@ int main() {
 {
     case 1:
     cout << "transferring call to customer service....";
-    
+    break;
     case 2:
     cout<<"transferring call to billing and accounts..";
-    
+    break;
     case 3:
     cout <<"connecting to the techinal help desk...";
-    
+    break;
     case 4:
     cout <<"connecting call to the agent.....";
-    
+    break;
     default:
     cout <<"Invalid selection enter a valid number,,,,";
     
