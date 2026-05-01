@@ -57,3 +57,45 @@ int main(){
     }
     return 0;
 }
+
+
+//Problem 4 -- Ternary Operator 
+// Find the Greater number amoung 2 
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int max_Number;
+    
+    cin >> a >>b;
+    //Ternary Operator
+    max_Number = (a > b) ? a : b;
+    
+    cout << max_Number;
+    return 0;
+}
+
+
+//problem 5 -- contine statement
+//print 1 to N and avoid those number which are divisible by Problem-3
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    
+    for (int i =1; <=n; i++){
+        if( i % 3 == 0){
+            continue;
+        }
+        cout  << i << " ";
+
+    }
+    cout << "/n";
+    retun 0;
+    
+}
+
