@@ -99,3 +99,56 @@ int main(){
     
 }
 
+
+
+//problem 6 -- Break statement
+#include<iostream>
+
+using namespace std;
+
+int main(){
+    int n;
+    int sum = 0;
+    
+    while(true){
+    cin >> n;
+    
+    if(num < 0){
+        break;
+        
+    }
+    sum = sum + n;
+}
+cout << sum;
+return 0;
+}
+
+
+
+//Problem 7 ---Smart home lighting system
+
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    string dayOrNight;
+    string motionDetected;
+    
+    cout << "is it day or night? ; ";
+    cin >> dayOrNight;
+    cout << "Is Motion Detected? (1 for Yes, 0 for No): ";
+    cin >> motionDetected;
+    
+    if(dayOrNight == "Night"  || dayOrNight == "night"){
+        if(motionDetected == "Yes") { 
+            cout << "Turn on the Led light with 100% brightness...";
+        } else {
+            cout << "Turn on the led light with only 10% brightness..";
+            
+        } 
+        } else {
+            cout << "turn off the Lights...";
+        }
+    return 0;
+
