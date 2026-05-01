@@ -152,3 +152,32 @@ int main() {
         }
     return 0;
 
+
+
+
+ int main(){
+        int choice;
+        cin >> choice;
+        
+        switch(choice)
+{
+    case 1:
+    cout << "transferring call to customer service....";
+    
+    case 2:
+    cout<<"transferring call to billing and accounts..";
+    
+    case 3:
+    cout <<"connecting to the techinal help desk...";
+    
+    case 4:
+    cout <<"connecting call to the agent.....";
+    
+    default:
+    cout <<"Invalid selection enter a valid number,,,,";
+    
+    
+    
+}   return 0; 
+             }
+
