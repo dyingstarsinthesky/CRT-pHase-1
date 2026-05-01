@@ -1,0 +1,148 @@
+//Temperature consversion
+//take inpur in form of celcius and convert to  farenheit...
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    
+    double celcius; 
+    double farenheit;
+    cin >> celcius;
+    farenheit = (celcius * 9.0 / 5.0) + 32.0;
+    cout << farenheit << endl;
+    
+    return 0;
+
+}
+
+----------------------------------------------------------------
+
+//Global variables vs Local variables
+
+#include<iostream>
+using namespace std;
+
+//global variable
+int globalVariable = 100;
+int main(){
+    //local variable
+    int userInput;
+    float result;
+    
+    cin >> userInput;
+    result = (double)globalVariable / userInput;
+    
+    cout << result << endl;
+    return 0;
+}
+
+----------------------------------------------------------------
+
+//Logial and relational Operators
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int side1, side2, side3;
+    cin >> side1 >> side2 >> side3;
+    
+    bool isEqui = (side1 > 0) && (side1 == side2) && (side2 == side3);
+    cout << isEqui << endl;
+    return 0;
+}
+
+----------------------------------------------------------------
+
+//Swap values of 2 variables using 3rd variable
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a;
+    int b;
+    
+    cin >> a >> b;
+    //swapping logic
+    int temp = a;
+    a = b;
+    b = temp;
+    
+    cout << a << "\n" << b << endl;
+    return 0;
+}
+
+----------------------------------------------------------------
+
+//Area of shapes
+//1 -- curcle, 2-- rectangle, 3-- triangle
+#include<iostream>
+using namespace std;
+
+int main(){
+    int choice;
+    cin >> choice;
+    
+    if(choice==1){
+        double radius;
+        cin >> radius;
+        cout << 3.14 * radius * radius << endl;
+    } else if(choice ==2){
+        double length, width;
+        cin >> length >> width;
+        cout << length * width<< endl;
+    } else if(choice == 3){
+        double base, height;
+        cin >> base >> height;
+        cout << 0.5*base*height << endl;
+    } else{
+        cout << "Invalid choice!"<<endl;
+    }
+    return 0;
+}
+
+----------------------------------------------------------------
+
+//take input from user and find sum and average
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b,c,sum;
+    float average;
+    
+    cin>>a>>b>>c;
+    sum = a+b+c;
+    average = sum / 3.0;
+    
+    cout << sum << endl;
+    cout << average << endl;
+    
+    return 0;
+}    
+
+----------------------------------------------------------------
+
+//Password management system
+#include<iostream>
+using namespace std;
+
+int main(){
+    const int userId = 1234;
+    const int password = 0000;
+    
+    int inputId, inputPassword;
+    cout << "Enter your ID here";
+    cin >> inputId;
+    cout << "Enter your password here";
+    cin >> inputPassword;
+    
+    bool isGranted = (userId == inputId) && (password == inputPassword);
+    
+    cout << "Access Granted" << isGranted << endl;
+    cout << "Access Denied" << isGranted << endl;
+    return 0;
+
+}
