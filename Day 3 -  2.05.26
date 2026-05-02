@@ -14,7 +14,7 @@ int main () {
 
 
 // Problem 2 -- 
-//print 1 to 10 using a for looop
+//print 10 to 1 using a for looop
 
 #include <iostream>
 using namespace std;
