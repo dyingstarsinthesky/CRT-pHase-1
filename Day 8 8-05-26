@@ -141,7 +141,7 @@ using namespace std;
 class A{
     public:
     void print(){
-        cout << "BJP Wons"<<"\n";
+        cout << "BJP Wins"<<"\n";
     }
 };
 class B : virtual public A{
