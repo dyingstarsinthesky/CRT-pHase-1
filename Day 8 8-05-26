@@ -101,3 +101,62 @@ int main() {
 }
 
 ---------------------
+//Problem 1
+//Inheritance
+//Type 1.4 - Multiple Inheritance
+
+class Parent1 {
+public:
+	void giveMoney() {
+		cout << "Mummy I am earning money" << "\n";
+	}
+};
+
+class Parent2 {
+public:
+	void giveMoney() {
+		cout<<"Papa I am earning money"<<"\n";
+	}
+};
+
+class child : public Parent1, public Parent2 {
+	//No Logic
+};
+
+int main() {
+	child obj1;
+	obj1.Parent2::giveMoney();
+	obj1.Parent1::giveMoney();
+}
+
+---------------------
+
+#include<iostream>
+using namespace std;
+
+//Problem 1
+//Inheritance
+//Type 1.5 - Hybrid Inheritance
+
+class A{
+    public:
+    void print(){
+        cout << "BJP Wons"<<"\n";
+    }
+};
+class B : virtual public A{
+    //No logic
+};
+class C :virtual public A{
+    //No logic
+};
+class D : public B, public C{
+    //No logic
+};
+
+int main(){
+  D obj1;
+  obj1.print();
+}
+
+---------------------
